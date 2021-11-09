@@ -142,6 +142,7 @@ body {
 }
 
 .session-date-item {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -164,7 +165,8 @@ body {
 }
 
 .session-date-item:hover {
-  background: #FE8E05;;
+  background: #FE8E05;
+  color: #621402;
 }
 
 .session-month {
@@ -181,4 +183,22 @@ body {
 .session-weekday {
   font-size: 19px;
   line-height: 22px;
+}
+
+.select-cinema, .select-time {
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  color: #fff;
+}
+
+.select-cinema {
+  min-width: 470px;
+}
+
+option {
+background: rgb(85, 29, 29);
 }
