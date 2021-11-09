@@ -14,32 +14,96 @@
 </head>
 
 <body>
-  <header class="header container">
-    <a href="/">
-      <img src="img/logo.svg" alt="logo">
-    </a>
-    <nav class="nav">
-      <ul class="menu">
-        <li class="menu-item">
-          <a href="#" class="menu-link">Главная</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-link">Фильмы</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-link">Кинотеатры</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-link">События</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-link">Поддержка</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="user">
-      <span class="">Hi, user</span>
-      <img class="avatar" src="img/user.jpg" alt="">
+  <header class="header">
+    <div class="navbar container">
+      <a href="/">
+        <img src="img/logo.svg" alt="logo">
+      </a>
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link">Главная</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Фильмы</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Кинотеатры</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">События</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Поддержка</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user">
+        <span class="">Hi, user</span>
+        <img class="avatar" src="img/user.jpg" alt="">
+      </div>
+    </div>
+    <div class="film container">
+      <div class="film-info">
+        <small class="film-title-small">Avengers: Infinity War</small>
+        <h1 class="film-title">Мстители: война бесконечности</h1>
+        <p class="film-description">
+          Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться
+          один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все
+          шесть Камней Бесконечности - артефакты невероятной силы, с помощью которых можно менять реальность по своему
+          желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё не была столь
+          неопределённой.
+        </p>
+        <div class="film-details">
+          <div class="film-time">
+            <img src="img/clock.svg" alt="clock icon" class="film-time-icon">
+            <span class="time-counter">240 мин</span>
+          </div>
+          <div class="rating">
+            <img src="img/imdb.png" alt="" class="rating-icon">
+            <span class="rating-counter">
+              <strong class="rating-current">9.2</strong> / 10
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- /.film-info -->
+      <a href="" class="film-trailer">
+        <img src="img/play-button.svg" alt="">
+      </a>
+    </div>
+    <!-- /.film -->
+    <div class="session container">
+      <div class="session-date">
+        <span class="session-label">Дата</span>
+        <div class="session-date-block">
+          <div class="session-date-item">
+            <span class="session-month">АПР</span>
+            <span class="session-day">27</span>
+            <span class="session-weekday">ПТ</span></div>
+          <div class="session-date-item">
+            <span class="session-month">АПР</span>
+            <span class="session-day">28</span>
+            <span class="session-weekday">СБ</span></div>
+          <div class="session-date-item">
+            <span class="session-month">АПР</span>
+            <span class="session-day">29</span>
+            <span class="session-weekday">ВС</span></div>
+          <div class="session-date-item">
+            <span class="session-month">АПР</span>
+            <span class="session-day">30</span>
+            <span class="session-weekday">ПН</span></div>
+        </div>
+      </div>
+      <!-- /.date -->
+      <div class="session-cinema">
+        <span class="session-label">Кинотеатр</span>
+      </div>
+      <!-- /.cinema-choice -->
+      <div class="session-time">
+        <span class="session-label">Время</span>
+      </div>
+      <!-- /.session-time -->
     </div>
   </header>
 </body>

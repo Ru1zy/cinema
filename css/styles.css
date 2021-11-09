@@ -1,13 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #621402;
   font-family: 'Roboto', sans-serif;
+  color: #fff;
 }
 
 .container {
   margin: auto;
   width: 1170px;
 }
+
 .header {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%),
+    url("../img/bg.jpg") no-repeat center top / cover;
+
+}
+
+.navbar {
   padding-top: 30px;
   padding-bottom: 30px;
   display: flex;
@@ -22,7 +35,7 @@ body {
 }
 
 .menu-item {
-  margin-right:25px;
+  margin-right: 25px;
 }
 
 .menu-link {
@@ -46,4 +59,126 @@ body {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+
+.film {
+  margin-top: 60px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.film-title-small {
+  opacity: 0.5;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.film-title {
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 11px;
+  margin-bottom: 23px;
+}
+
+.film-description {
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 570px;
+}
+
+.film-trailer {
+  margin: auto;
+}
+
+.film-details {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.film-time {
+  display: flex;
+  align-items: center;
+}
+
+.film-time-icon {
+  margin-right: 14px;
+}
+
+.rating {
+  margin-left: 34px;
+  display: flex;
+  align-items: center;
+}
+
+.rating-icon {
+  margin-right: 12px;
+}
+
+.rating-current {
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.session {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 60px;
+  padding-top: 46px;
+  padding-bottom: 64px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.session-label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.session-date-block {
+  display: flex;
+}
+
+.session-date-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.session-date-item:hover {
+  background: #FE8E05;;
+}
+
+.session-month {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.session-day {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 35px;
+}
+
+.session-weekday {
+  font-size: 19px;
+  line-height: 22px;
 }
