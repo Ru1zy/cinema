@@ -223,9 +223,9 @@ option {
   -o-border-radius: 10px;
 }
 
-.scheme-svg {
+/*.scheme-svg {
   max-width: 1170px;
-}
+}*/
 
 .scheme path:not(.light) {
   fill: rgba(255, 255, 255, 0.2);
@@ -392,5 +392,37 @@ option {
     -moz-transition: opacity 0.5s, transform 0.5s;
     -ms-transition: opacity 0.5s, transform 0.5s;
     -o-transition: opacity 0.5s, transform 0.5s;
+  }
+}
+
+@media (max-width: 580px) {
+  .container {
+    max-width: 360px;
+  }
+
+  .session-time {
+    margin-bottom: 30px;
+  }
+
+  .place-label {
+    font-size: 12px;
+  }
+
+  .about-places svg {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .price-tag {
+    font-size: 30px;
+  }
+
+  .button-pay {
+    font-size: 15px;
+  }
+
+  .price-label {
+    font-size: 15px;
   }
 }
