@@ -89,6 +89,7 @@ body {
 }
 
 .film-description {
+  text-align: justify;
   font-size: 16px;
   line-height: 150%;
   max-width: 570px;
@@ -393,6 +394,14 @@ option {
     -ms-transition: opacity 0.5s, transform 0.5s;
     -o-transition: opacity 0.5s, transform 0.5s;
   }
+
+  .film {
+    flex-direction: column;
+  }
+
+  .film-trailer {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 580px) {
@@ -424,5 +433,15 @@ option {
 
   .price-label {
     font-size: 15px;
+  }
+
+  .session-date-item {
+    height: 75px;
+    width: 75px;
+    margin-right: 10px;
+  }
+
+  .button-pay {
+    padding: 18px 36px;
   }
 }
