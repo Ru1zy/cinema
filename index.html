@@ -4,11 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cin.Emma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Cin.Emma — Премиальное бронирование билетов в кино</title>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
@@ -17,121 +19,124 @@
 <body>
   <header class="header">
     <div class="navbar container">
-      <a href="/">
-        <img src="img/logo.svg" alt="logo">
+      <a href="index.html" class="logo-link">
+        <img src="img/logo.svg" alt="Cin.Emma" class="brand-logo">
       </a>
       <nav class="nav">
-        <button class="mobile-menu">
-          <svg width="15" height="7" viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line y1="0.5" x2="15" y2="0.5" stroke="white" />
-            <line y1="3.5" x2="15" y2="3.5" stroke="white" />
-            <line y1="6.5" x2="15" y2="6.5" stroke="white" />
+        <button class="mobile-menu" aria-label="Меню">
+          <svg width="20" height="12" viewBox="0 0 20 12" fill="none">
+            <line y1="1" x2="20" y2="1" stroke="currentColor" stroke-width="2"/>
+            <line y1="6" x2="20" y2="6" stroke="currentColor" stroke-width="2"/>
+            <line y1="11" x2="20" y2="11" stroke="currentColor" stroke-width="2"/>
           </svg>
         </button>
         <ul class="menu">
-          <li class="menu-item">
-            <a href="#" class="menu-link">Главная</a>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-link">Фильмы</a>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-link">Кинотеатры</a>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-link">События</a>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-link">Поддержка</a>
-          </li>
+          <li class="menu-item"><a href="#" class="menu-link active">Афиша</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">Кинотеатры</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">IMAX &amp; VIP</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">Снек-бар</a></li>
+          <li class="menu-item"><a href="https://ru1zy.github.io/" class="menu-link">Портфолио</a></li>
         </ul>
       </nav>
       <div class="user">
-        <span class="">Hi, user</span>
-        <img class="avatar" src="img/user.jpg" alt="">
+        <span class="user-greeting">Hi, Guest</span>
+        <img class="avatar" src="img/user.jpg" alt="Avatar">
       </div>
     </div>
+
     <div class="film container">
       <div class="film-info">
-        <small class="film-title-small">Avengers: Infinity War</small>
-        <h1 class="film-title">Мстители: война бесконечности</h1>
+        <div class="film-badge">ПРЕМЬЕРА МЕСЯЦА</div>
+        <small class="film-title-small">Marvel Studios • Avengers: Infinity War</small>
+        <h1 class="film-title">Мстители: Война Бесконечности</h1>
         <p class="film-description">
-          Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться
-          один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все
-          шесть Камней Бесконечности - артефакты невероятной силы, с помощью которых можно менять реальность по своему
-          желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё не была столь
-          неопределённой.
+          Пока Мстители и их союзники продолжают защищать мир от различных опасностей, новая космическая угроза возникает в лице тирана Таноса. Его цель — собрать все шесть Камней Бесконечности и уничтожить половину Вселенной одним щелчком.
         </p>
         <div class="film-details">
           <div class="film-time">
             <img src="img/clock.svg" alt="clock icon" class="film-time-icon">
-            <span class="time-counter">240 мин</span>
+            <span class="time-counter">149 мин</span>
           </div>
           <div class="rating">
-            <img src="img/imdb.png" alt="" class="rating-icon">
+            <img src="img/imdb.png" alt="IMDb" class="rating-icon">
             <span class="rating-counter">
-              <strong class="rating-current">9.2</strong> / 10
+              <strong class="rating-current">8.4</strong> / 10
             </span>
           </div>
+          <div class="age-badge">16+</div>
         </div>
       </div>
-      <!-- /.film-info -->
-      <a data-fancybox="video-gallery" data-src="https://www.youtube.com/watch?v=FeJKZMFJ7NA" href="#" class="film-trailer">
-        <img src="img/play-button.svg" alt="">
+
+      <a data-fancybox="video-gallery" data-src="https://www.youtube.com/watch?v=6ZfuNTqbHE8" href="#" class="film-trailer" title="Смотреть трейлер">
+        <div class="trailer-pulse"></div>
+        <img src="img/play-button.svg" alt="Play">
       </a>
     </div>
-    <!-- /.film -->
+
     <div class="session container">
       <div class="session-date">
-        <span class="session-label">Дата</span>
+        <span class="session-label">Дата сеанса</span>
         <div class="session-date-block">
-          <div class="session-date-item">
+          <div class="session-date-item active">
             <span class="session-month">АПР</span>
             <span class="session-day">27</span>
-            <span class="session-weekday">ПТ</span></div>
+            <span class="session-weekday">ПТ</span>
+          </div>
           <div class="session-date-item">
             <span class="session-month">АПР</span>
             <span class="session-day">28</span>
-            <span class="session-weekday">СБ</span></div>
+            <span class="session-weekday">СБ</span>
+          </div>
           <div class="session-date-item">
             <span class="session-month">АПР</span>
             <span class="session-day">29</span>
-            <span class="session-weekday">ВС</span></div>
+            <span class="session-weekday">ВС</span>
+          </div>
           <div class="session-date-item">
             <span class="session-month">АПР</span>
             <span class="session-day">30</span>
-            <span class="session-weekday">ПН</span></div>
+            <span class="session-weekday">ПН</span>
+          </div>
         </div>
       </div>
-      <!-- /.date -->
+
       <div class="session-cinema">
-        <span class="session-label">Кинотеатр</span>
+        <span class="session-label">Кинотеатр и Зал</span>
         <select class="select-cinema" name="cinema">
-          <option value="Multiplex, ТРЦ Аврора, проспект Соборный, 83/85">Multiplex, ТРЦ Аврора, проспект Соборный,
-            83/85</option>
-          <option value="Космос, Космос Сити, Космическая 119">Космос, Космос Сити, Космическая 119</option>
-          <option value="Байда, проспект Соборний, 162">Байда, проспект Соборний, 162</option>
-          <option value="Кинотеатр им. Довженко, проспект Соборний, 145">Кинотеатр им. Довженко, проспект Соборний, 145
-          </option>
-          <option value="Кінотеатр ім. Маяковського, проспект Соборний, 167">Кінотеатр ім. Маяковського, проспект
-            Соборний, 167</option>
+          <option value="Multiplex, ТРЦ Аврора (Зал 1 IMAX)">Multiplex, ТРЦ Аврора (Зал 1 IMAX Laser)</option>
+          <option value="Космос Сити (VIP Зал Atmos)">Космос Сити (VIP Зал Atmos)</option>
+          <option value="Кинотеатр им. Довженко (Большой зал)">Кинотеатр им. Довженко (Большой зал)</option>
+          <option value="Байда Cinema (Зал 3 Luxe)">Байда Cinema (Зал 3 Luxe)</option>
         </select>
       </div>
-      <!-- /.cinema-choice -->
+
       <div class="session-time">
         <span class="session-label">Время</span>
         <select class="select-time" name="time">
-          <option value="09:00">09:00</option>
-          <option value="12:00">12:00</option>
-          <option value="15:00">15:00</option>
-          <option value="18:00">18:00</option>
-          <option value="21:00">21:00</option>
+          <option value="12:00">12:00 (Утро)</option>
+          <option value="15:00">15:00 (День)</option>
+          <option value="18:00" selected>18:00 (Прайм-тайм)</option>
+          <option value="21:00">21:00 (Вечер)</option>
+          <option value="23:45">23:45 (Ночной показ)</option>
         </select>
       </div>
-      <!-- /.session-time -->
+
+      <div class="session-format">
+        <span class="session-label">Формат показа</span>
+        <div class="format-pills">
+          <button type="button" class="format-pill active" data-format="IMAX 3D Laser">IMAX 3D</button>
+          <button type="button" class="format-pill" data-format="Dolby Atmos 2D">Dolby Atmos</button>
+          <button type="button" class="format-pill" data-format="VIP Suite">VIP Suite</button>
+        </div>
+      </div>
     </div>
   </header>
+
   <div class="scheme container">
+    <div class="screen-indicator">
+      <div class="screen-curve"></div>
+      <span class="screen-text">ЭКРАН IMAX LASER</span>
+    </div>
     <svg class="scheme-svg" viewBox="0 0 1170 600" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path class="light" d="M128 115L201.04 48H968.96L1042 115H128Z" fill="url(#paint0_linear_13_374)" />
       <line x1="76" y1="43" x2="1094" y2="43" stroke="black" stroke-opacity="0.39" stroke-width="10" />
@@ -456,38 +461,211 @@
     </svg>
     <div class="about-places">
       <div class="place-free place-label">
-        <svg width="38" height="32" viewBox="0 0 38 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M0 24.5C0 24.5256 0.000982583 24.5512 0.00294554 24.5767C0.0963478 25.7909 0.536755 27.5963 1.58794 29.1283C2.66579 30.6991 4.40875 32 7 32H29.5C29.5238 32 29.5475 31.9992 29.5712 31.9975C30.8985 31.9027 32.8511 31.3731 34.4956 30.0716C36.1806 28.7381 37.5 26.6218 37.5 23.5V14H35.5V23.5C35.5 25.9782 34.486 27.5286 33.2544 28.5034C31.9964 29.499 30.4694 29.9212 29.4627 30H7C5.19125 30 4.01754 29.1342 3.23706 27.9967C2.44021 26.8354 2.07957 25.4126 2 24.46V14H0V24.5ZM26.5 1H10.5C7.18629 1 4.5 3.68629 4.5 7V20C4.5 23.3137 7.18629 26 10.5 26H26.5C29.8137 26 32.5 23.3137 32.5 20V7C32.5 3.68629 29.8137 1 26.5 1Z" />
-        </svg>
-        <span class="place-text">Свободно</span>
+        <span class="legend-swatch standard-swatch"></span>
+        <span class="place-text">Стандарт (140 ₴)</span>
+      </div>
+      <div class="place-vip place-label">
+        <span class="legend-swatch vip-swatch"></span>
+        <span class="place-text">VIP Диван (220 ₴)</span>
       </div>
       <div class="place-chosen place-label">
-        <svg width="38" height="32" viewBox="0 0 38 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path class="chosen"
-            d="M0.390625 24.5C0.390625 24.5256 0.391608 24.5512 0.393571 24.5767C0.486973 25.7909 0.92738 27.5963 1.97857 29.1283C3.05641 30.6991 4.79938 32 7.39062 32H29.8906C29.9144 32 29.9382 31.9992 29.9619 31.9975C31.2891 31.9027 33.2417 31.3731 34.8862 30.0716C36.5712 28.7381 37.8906 26.6218 37.8906 23.5V14H35.8906V23.5C35.8906 25.9782 34.8767 27.5286 33.645 28.5034C32.3871 29.499 30.86 29.9212 29.8533 30H7.39062C5.58187 30 4.40817 29.1342 3.62768 27.9967C2.83084 26.8354 2.4702 25.4126 2.39062 24.46V14H0.390625V24.5ZM26.8906 1H10.8906C7.57692 1 4.89062 3.68629 4.89062 7V20C4.89062 23.3137 7.57692 26 10.8906 26H26.8906C30.2043 26 32.8906 23.3137 32.8906 20V7C32.8906 3.68629 30.2043 1 26.8906 1Z" />
-        </svg>
+        <span class="legend-swatch chosen-swatch"></span>
         <span class="place-text">Выбрано</span>
       </div>
       <div class="place-taken place-label">
-        <svg width="39" height="32" viewBox="0 0 39 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path class="taken"
-            d="M0.8125 24.5C0.8125 24.5256 0.813483 24.5512 0.815446 24.5767C0.908848 25.7909 1.34926 27.5963 2.40044 29.1283C3.47829 30.6991 5.22125 32 7.8125 32H30.3125C30.3363 32 30.36 31.9992 30.3837 31.9975C31.711 31.9027 33.6636 31.3731 35.3081 30.0716C36.9931 28.7381 38.3125 26.6218 38.3125 23.5V14H36.3125V23.5C36.3125 25.9782 35.2985 27.5286 34.0669 28.5034C32.8089 29.499 31.2819 29.9212 30.2752 30H7.8125C6.00375 30 4.83004 29.1342 4.04956 27.9967C3.25271 26.8354 2.89207 25.4126 2.8125 24.46V14H0.8125V24.5ZM27.3125 1H11.3125C7.99879 1 5.3125 3.68629 5.3125 7V20C5.3125 23.3137 7.99879 26 11.3125 26H27.3125C30.6262 26 33.3125 23.3137 33.3125 20V7C33.3125 3.68629 30.6262 1 27.3125 1Z" />
-        </svg>
+        <span class="legend-swatch taken-swatch"></span>
         <span class="place-text">Занято</span>
       </div>
     </div>
-    <!-- .about-places -->
   </div>
-  <!-- .scheme -->
-  <div class="price container">
-    <div class="price-tag">
-      <span class="price-label">Всего к оплате</span>
-      <span class="total-price">0</span>
-      <span class="uah">₴</span>
+
+  <!-- Selected Seats Chips Bar -->
+  <div class="selected-seats-bar container">
+    <div class="chips-header">
+      <span class="chips-title">Выбранные места (<span id="selectedSeatsCount">0</span>):</span>
     </div>
-    <a href="#" class="button button-pay">Перейти к оплате</a>
+    <div class="chips-list" id="selectedSeatsList">
+      <span class="empty-seats-hint">Нажмите на свободные места на схеме зала</span>
+    </div>
   </div>
+
+  <!-- Snack Bar Section -->
+  <section class="snacks-section container">
+    <div class="snacks-header">
+      <h2 class="snacks-title">🍿 Добавить снеки и напитки к сеансу</h2>
+      <p class="snacks-desc">Заберите готовый заказ на экспресс-стойке бара перед сеансом без очередей.</p>
+    </div>
+
+    <div class="snacks-grid">
+      <!-- Snack 1 -->
+      <div class="snack-card">
+        <div class="snack-icon">🍿</div>
+        <div class="snack-info">
+          <h3 class="snack-name">Карамельный попкорн L</h3>
+          <span class="snack-price">120 ₴</span>
+        </div>
+        <div class="snack-counter">
+          <button type="button" class="snack-btn" data-action="minus" data-snack="popcorn" aria-label="Меньше">-</button>
+          <span class="snack-count" id="count_popcorn">0</span>
+          <button type="button" class="snack-btn" data-action="plus" data-snack="popcorn" aria-label="Больше">+</button>
+        </div>
+      </div>
+
+      <!-- Snack 2 -->
+      <div class="snack-card">
+        <div class="snack-icon">🧀</div>
+        <div class="snack-info">
+          <h3 class="snack-name">Начос с сырным соусом</h3>
+          <span class="snack-price">95 ₴</span>
+        </div>
+        <div class="snack-counter">
+          <button type="button" class="snack-btn" data-action="minus" data-snack="nachos" aria-label="Меньше">-</button>
+          <span class="snack-count" id="count_nachos">0</span>
+          <button type="button" class="snack-btn" data-action="plus" data-snack="nachos" aria-label="Больше">+</button>
+        </div>
+      </div>
+
+      <!-- Snack 3 -->
+      <div class="snack-card">
+        <div class="snack-icon">🥤</div>
+        <div class="snack-info">
+          <h3 class="snack-name">Coca-Cola Zero 0.5L</h3>
+          <span class="snack-price">55 ₴</span>
+        </div>
+        <div class="snack-counter">
+          <button type="button" class="snack-btn" data-action="minus" data-snack="cola" aria-label="Меньше">-</button>
+          <span class="snack-count" id="count_cola">0</span>
+          <button type="button" class="snack-btn" data-action="plus" data-snack="cola" aria-label="Больше">+</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Bottom Checkout Bar -->
+  <div class="price-bar-wrapper">
+    <div class="price container">
+      <div class="price-tag">
+        <span class="price-label">Всего к оплате:</span>
+        <span class="price-val"><span class="total-price">0</span> <span class="uah">₴</span></span>
+      </div>
+      <button type="button" class="button button-pay disabled">Выберите места</button>
+    </div>
+  </div>
+
+  <!-- Checkout Modal Drawer -->
+  <div class="modal-backdrop" id="checkoutModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="closeCheckoutBtn" aria-label="Закрыть">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-badge">ОФОРМЛЕНИЕ ЗАКАЗА</div>
+        <h3 class="modal-title">Подтверждение бронирования</h3>
+      </div>
+
+      <div class="order-summary-box">
+        <div class="summary-line">
+          <span class="summary-term">Фильм:</span>
+          <strong class="summary-val" id="checkoutFilmSummary">Мстители: Война Бесконечности</strong>
+        </div>
+        <div class="summary-line">
+          <span class="summary-term">Сеанс:</span>
+          <span class="summary-val" id="checkoutSessionSummary">27 АПР в 18:00 • IMAX 3D Laser</span>
+        </div>
+        <div class="summary-line">
+          <span class="summary-term">Кинотеатр:</span>
+          <span class="summary-val" id="checkoutHallSummary">Multiplex, ТРЦ Аврора</span>
+        </div>
+        <div class="summary-line">
+          <span class="summary-term">Места:</span>
+          <span class="summary-val highlight-val" id="checkoutSeatsDetails">—</span>
+        </div>
+        <div class="summary-line">
+          <span class="summary-term">Снек-бар:</span>
+          <span class="summary-val" id="checkoutSnacksDetails">Без снеков</span>
+        </div>
+        <div class="summary-divider"></div>
+        <div class="summary-line total-line">
+          <span class="summary-term">Итоговая сумма:</span>
+          <strong class="summary-val total-highlight" id="checkoutTotalSum">0 ₴</strong>
+        </div>
+      </div>
+
+      <form id="checkoutForm" class="checkout-form">
+        <div class="form-group">
+          <label for="userName">Имя зрителя</label>
+          <input type="text" id="userName" class="form-input" placeholder="Введите ваше имя" required value="Киноман">
+        </div>
+        <div class="form-group">
+          <label for="userPhone">Телефон для SMS-билета</label>
+          <input type="tel" id="userPhone" class="form-input" placeholder="+380 (XX) XXX-XX-XX" required value="+380 99 123 45 67">
+        </div>
+
+        <button type="submit" class="btn-confirm-order">
+          <span>Оплатить и получить QR-билет</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Virtual Boarding Pass Ticket Modal -->
+  <div class="modal-backdrop" id="ticketModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog ticket-dialog">
+      <button class="modal-close" id="closeTicketBtn" aria-label="Закрыть">&times;</button>
+
+      <div class="ticket-card">
+        <div class="ticket-header">
+          <div class="ticket-brand">
+            <span class="brand-cinema">CIN.EMMA</span>
+            <span class="brand-pass">BOARDING PASS</span>
+          </div>
+          <div class="ticket-id-box">
+            <span class="id-label">BOOKING #</span>
+            <span class="id-val" id="ticketBookingId">IMX-774912</span>
+          </div>
+        </div>
+
+        <div class="ticket-body">
+          <h2 class="ticket-movie">Мстители: Война Бесконечности</h2>
+          
+          <div class="ticket-details-grid">
+            <div class="detail-cell">
+              <span class="cell-label">Зритель</span>
+              <span class="cell-val" id="ticketHolder">Киноман</span>
+            </div>
+            <div class="detail-cell">
+              <span class="cell-label">Кинотеатр</span>
+              <span class="cell-val" id="ticketCinema">Multiplex</span>
+            </div>
+            <div class="detail-cell">
+              <span class="cell-label">Дата &amp; Время</span>
+              <span class="cell-val highlight" id="ticketDateTime">27 АПР, 18:00</span>
+            </div>
+            <div class="detail-cell">
+              <span class="cell-label">Формат</span>
+              <span class="cell-val" id="ticketFormat">IMAX 3D Laser</span>
+            </div>
+          </div>
+
+          <div class="ticket-seats-highlight">
+            <span class="seats-label">ВАШИ МЕСТА:</span>
+            <span class="seats-data" id="ticketSeats">Ряд 4, Место 12</span>
+          </div>
+
+          <div class="ticket-qr-section">
+            <canvas id="ticketQrCanvas" width="160" height="160" class="qr-canvas"></canvas>
+            <span class="qr-hint">Предъявите этот QR-код на входе в зал</span>
+          </div>
+        </div>
+
+        <div class="ticket-footer-actions">
+          <button type="button" class="btn-ticket-print" id="printTicketBtn">
+            <span>Печать / Сохранить PDF</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   <script src="js/script.js"></script>
 </body>
